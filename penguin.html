@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Penguin</title>
+	<style type="text/css">
+		
+		body{
+			height: 100vh;
+			background: rgb(91, 91, 228);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.penguin * {
+			position: absolute;
+		}
+
+		.penguin{
+			--skin: black;
+			--belly: white;
+			--beak: yellow;
+
+			width: 400px;
+			height: 400px;
+			/* background-color: beige; */
+
+			position: relative;
+		}
+
+		.penguin-top{
+			width: 50%;
+			height: 45%;
+			background: var(--skin);
+			border-radius: 70% 70% 60% 60%;
+
+			top: 10%;
+			left: 25%;
+		}
+
+		.penguin-bottom{
+			width: 53%;
+			height: 45%;
+			background: var(--skin);
+			border-radius: 70% 70% 100% 100%;
+
+			top: 40%;
+			left: 23.5%;
+		}
+
+		.right-cheek{
+			width: 60%;
+			height: 70%;
+			background: var(--belly);
+			border-radius: 70% 70% 60% 60%;
+
+			top: 15%;
+			left: 35%;
+		}
+
+		.left-cheek{
+			width: 60%;
+			height: 70%;
+			background: var(--belly);
+			border-radius: 70% 70% 60% 60%;
+
+			top: 15%;
+			left: 5%;
+		}
+
+		.right-eye{
+			width: 15%;
+			height: 17%;
+			background: black;
+			border-radius: 50%;
+
+			top: 45%;
+			left: 60%;
+		}
+
+		.left-eye{
+			width: 15%;
+			height: 17%;
+			background: black;
+			border-radius: 50%;
+
+			top: 45%;
+			left: 25%;
+		}
+
+		.sparkle{
+			width: 35%;
+			height: 35%;
+			background: white;
+			border-radius: 50%;
+
+			top: 25%;
+			left: 15%;
+		}
+
+		.blush-right{
+			width: 15%;
+			height: 10%;
+			background: pink;
+			border-radius: 50%;
+
+			top: 65%;
+			left: 15%;
+		}
+
+		.blush-left{
+			width: 15%;
+			height: 10%;
+			background: pink;
+			border-radius: 50%;
+
+			top: 65%;
+			left: 70%;
+		}
+
+		.beak-top{
+			width: 20%;
+			height: 10%;
+			background: var(--beak);
+			border-radius: 50%;
+
+			top: 60%;
+			left: 40%;
+		}
+
+		.beak-bottom{
+			width: 16%;
+			height: 10%;
+			background: var(--beak);
+			border-radius: 50%;
+
+			top: 65%;
+			left: 42%;
+		}
+
+		.belly{
+			width: 95%;
+			height: 100%;
+			background: var(--belly);
+			border-radius: 120% 120% 100% 100%;
+
+			top: 60%;
+			left: 2.5%;
+		}
+
+		.right-hand{
+			width: 30%;
+			height: 60%;
+			background: var(--skin);
+			border-radius: 30% 30% 120% 30%;
+
+			top: 0%;
+			left: -5%;
+
+			z-index: -1;
+
+			transform: rotate(45deg);
+		}
+
+		.left-hand{
+			width: 30%;
+			height: 60%;
+			background: var(--skin);
+			border-radius: 30% 30% 30% 120%;
+
+			top: 0%;
+			left: 75%;
+
+			z-index: -1;
+
+			transform: rotate(-45deg);
+		}
+
+		.right-feet{
+			width: 15%;
+			height: 30%;
+			background: var(--beak);
+			border-radius: 50% 50% 50% 50%;
+
+			top: 85%;
+			left: 60%;
+
+			z-index: -2;
+
+			transform: rotate(-80deg);
+		}
+
+		.left-feet{
+			width: 15%;
+			height: 30%;
+			background: var(--beak);
+			border-radius: 50% 50% 50% 50%;
+
+			top: 85%;
+			left: 25%;
+
+			z-index: -2;
+
+			transform: rotate(80deg);
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="penguin">
+
+		<div class="penguin-bottom">
+			<div class="right-hand"></div>
+			<div class="left-hand"></div>
+			<div class="right-feet"></div>
+			<div class="left-feet"></div>
+		</div>
+
+		<div class="penguin-top">
+			<div class="right-cheek"></div>
+			<div class="left-cheek"></div>
+			<div class="belly"></div>
+			<div class="right-eye">
+				<div class="sparkle"></div>
+			</div>
+			<div class="left-eye">
+				<div class="sparkle"></div>
+			</div>
+			<div class="blush-right"></div>
+			<div class="blush-left"></div>
+			<div class="beak-top"></div>
+			<div class="beak-bottom"></div>
+		</div>
+
+	</div>
+
+</body>
+</html>
